@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900italic);
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+h1,h2,h3{
+  font-weight: 900;
+}
+.grayfont {
+  color: #808285;
+}
+.bluefont {
+  color: #156786;
+}
+.greenfont {
+  color: #5cbc87;
+}
+h2.storyfontcolor {
+  color: #156786;
+}
+.footer {
+  font-family: 'Lato', sans-serif;
+  color: #156786;
+}
+.nav ul {
+  list-style: none;
+  background-color: #dcc871;
+  text-align: center;
+  padding: 0;
+}
+.nav img.brand {
+
+}
+.nav li {
+  font-size: 16px;
+  line-height: 50px;
+  height: 50px;
+	text-align: center;
+  border-bottom: 1px solid #fff;
+}
+.nav a {
+  text-decoration: none;
+  color: #444;
+  display: block;
+  transition: .3s background-color;
+}
+.nav a:hover {
+  background-color: #F1E9C6;
+}
+.nav a.active {
+  background-color: #dcc871;
+  color: #444;
+  cursor: default;
+}
+.nav li.menu-item{
+  display:none;
+}
+@media screen and (min-width: 515px) {
+  .nav li {
+		font-size: 16px;
+    width: 130px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    margin-right: -4px;
+  }
+  .nav li.menu-item{
+    display: inline-block;
+  }
+	.nav a.active {
+	  background-color: #fff;
+	  color: #444;
+	  cursor: default;
+	}
+}
+@media screen and (min-width: 720px) {
+  .nav li {
+		font-size: 20px;
+    width: 180px;
+  }
+}
+/*fit header logo to screen size < 495*/
+img.header-logo{
+  width: auto;
+  height: auto;
+}
+@media screen and (max-width: 495px) {
+  img.header-logo{
+    width: 100%;
+    height: 100%;
+  }
+}
+/* Following styles are for the time distribution graphs */
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.bar {
+    fill: steelblue;
+}
+
+.x.axis path {
+    display: none;
+}
+
+g.g > rect {
+    transition: .3s ease-in-out;
+}
+
+.shrink > rect {
+    height: 0;
+    y: 249;
+}
+
+.wrapper {
+
+  margin: auto 0;
+  float: none;
+}
+
+
